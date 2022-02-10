@@ -8,7 +8,7 @@ module.exports = {
     const replies = ['Yes.', 'No.', 'Never.', 'Definitely.', 'Ask again later.']; // random responses
 
     const result = Math.floor(Math.random() * replies.length); // Get a random respons for the array
-    const question = args.join(' '); // join the args(Array<string>) to a question string
+    const question = args.join(' ');
     // check permissions for embed
     if (message.channel.permissionsFor(message.guild.me).has('EMBED_LINKS')) {
       const embed = new MessageEmbed() // create embed 
